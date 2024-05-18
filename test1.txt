@@ -1,0 +1,6 @@
+import imageio.v3 as iio
+filenames = ['camera_1456585594897.jpg' , 'camera_1456585609143.jpg']
+images = []
+for filename in filenames:
+    images.append(iio.imread(filename))
+iio.imwrite('yunus.gif' , images, duration = 500, loop = 0)
